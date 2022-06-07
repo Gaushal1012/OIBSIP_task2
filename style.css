@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient( to bottom, rgb(17, 0, 167),rgb(183, 61, 224));
+}
+
+.container {
+  /* border: 2px solid red; */
+  margin: auto;
+  max-width: 1200px;
+  font-size: 1rem;
+  overflow: hidden;
+  /* border: 2px solid yellow; */
+}
+
+.hero {
+  /* border: 2px solid black; */
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(11, 9, 10),
+    rgb(255, 193, 23)
+  );
+  /* box-shadow: 0 0 3rem 1rem rgb(247, 155, 17); */
+  z-index: 2;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0 0.1rem 0.8rem rgb(0, 0, 0);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right h2 {
+  font-family: "Caveat", cursive;
+  color: white;
+}
+
+.right h1 {
+  font-family: "Caveat", cursive;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 0.2rem black;
+}
+
+.sec {
+  display: flex;
+  column-gap: 2rem;
+  padding: 1rem;
+  margin: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: rgb(250, 250, 250);
+  z-index: 1;
+  box-shadow: 0 0.1rem 0.2rem rgb(0, 0, 0);
+}
+
+.shade {
+  margin-top: 1.1rem;
+}
+
+.img_sec {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.img_sec img {
+  width: 10rem;
+  height: 10rem;
+  filter: drop-shadow(0 0 0.2rem rgb(255, 168, 168));
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: rgb(255, 4, 4);
+  line-height: 3;
+  font-family: "Courgette", cursive;
+  /* text-shadow: 0 0 0.05rem black; */
+}
+
+span {
+  width: 2rem;
+  border: 2px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid rgb(232, 53, 17);
+}
+
+.left img{
+  margin-top: 1rem;
+  height: 15rem;
+  box-shadow: 0px 0px 10px 5px rgba(5, 5, 5, 0.452);
+  border-radius: 1rem;
+}
+
+.img_sec img{
+  box-shadow: 0px 0px 10px 5px rgba(5, 5, 5, 0.452);
+  border-radius: 1rem;
+}
+
+.title{
+  text-shadow: 0px 0px 10px  rgba(5, 5, 5, 0.452);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+      max-width: 90%;
+    }
+    .sec{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title{
+        text-align: center;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    html {
+      font-size: 12px;
+    }
+
+    .hero{
+        flex-wrap: wrap-reverse;
+    }
+    
+  }
